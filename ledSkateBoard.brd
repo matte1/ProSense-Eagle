@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -1107,11 +1107,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U4" pad="1"/>
 <contactref element="U4" pad="3"/>
 <contactref element="C14" pad="2"/>
-<wire x1="41.468" y1="54.6401" x2="41.468" y2="53.655" width="0.254" layer="16"/>
-<wire x1="41.468" y1="53.655" x2="41.783" y2="53.34" width="0.254" layer="16"/>
-<wire x1="41.783" y1="53.34" x2="42.926" y2="53.34" width="0.254" layer="16"/>
-<wire x1="42.926" y1="53.34" x2="43.307" y2="53.721" width="0.254" layer="16"/>
-<wire x1="43.307" y1="53.721" x2="43.307" y2="54.5791" width="0.254" layer="16"/>
 <wire x1="43.307" y1="54.5791" x2="43.368" y2="54.6401" width="0.254" layer="16"/>
 <wire x1="41.01" y1="57.15" x2="41.01" y2="58.282" width="0.4064" layer="16"/>
 <wire x1="41.01" y1="58.282" x2="41.656" y2="58.928" width="0.4064" layer="16"/>
@@ -1119,6 +1114,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="41.656" y1="61.054" x2="41.799" y2="61.07" width="0.4064" layer="16"/>
 <wire x1="41.01" y1="57.15" x2="41.01" y2="55.0981" width="0.4064" layer="16"/>
 <wire x1="41.01" y1="55.0981" x2="41.468" y2="54.6401" width="0.4064" layer="16"/>
+<wire x1="41.468" y1="54.6401" x2="41.402" y2="54.6401" width="0.4064" layer="16"/>
+<wire x1="41.402" y1="54.6401" x2="41.402" y2="53.721" width="0.4064" layer="16"/>
+<wire x1="41.402" y1="53.721" x2="41.656" y2="53.467" width="0.4064" layer="16"/>
+<wire x1="41.656" y1="53.467" x2="43.053" y2="53.467" width="0.4064" layer="16"/>
+<wire x1="43.053" y1="53.467" x2="43.434" y2="53.848" width="0.4064" layer="16"/>
+<wire x1="43.434" y1="53.848" x2="43.434" y2="54.5741" width="0.4064" layer="16"/>
+<wire x1="43.434" y1="54.5741" x2="43.368" y2="54.6401" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="BNO055" pad="9"/>
