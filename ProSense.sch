@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2135,96 +2135,136 @@ damage, arising out of or in connection with the use of this library.&lt;/li&gt;
 &lt;/ul&gt;
 Please send your comments to the mail address above.</description>
 <packages>
-<package name="SOT163-1">
-<description>&lt;li&gt;&lt;b&gt;SOT163-1&lt;/b&gt;&lt;hr&gt;
-&lt;ul&gt;&lt;li&gt;SO20: plastic small outline package; 20 leads; body width 7.5 mm
-&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: MS-013
-&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: 075E04&lt;/ul&gt;</description>
-<wire x1="-6.4" y1="3.75" x2="-6.4" y2="-3.27" width="0.1524" layer="21"/>
-<wire x1="-6.4" y1="-3.27" x2="-6.4" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="-6.4" y1="-3.75" x2="6.4" y2="-3.75" width="0.1524" layer="21"/>
-<wire x1="6.4" y1="-3.75" x2="6.4" y2="-3.27" width="0.1524" layer="21"/>
-<wire x1="6.4" y1="-3.27" x2="6.4" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="6.4" y1="3.75" x2="-6.4" y2="3.75" width="0.1524" layer="21"/>
-<wire x1="-6.4" y1="-3.27" x2="6.4" y2="-3.27" width="0.1524" layer="21"/>
-<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.127" layer="21" curve="-180"/>
-<smd name="2" x="-4.445" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="19" x="-4.445" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="-3.175" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="-1.905" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="18" x="-3.175" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="17" x="-1.905" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="-0.635" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="16" x="-0.635" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="15" x="0.635" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="1.905" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="3.175" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="14" x="1.905" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="13" x="3.175" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="9" x="4.445" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="12" x="4.445" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="20" x="-5.715" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="11" x="5.715" y="4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="10" x="5.715" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-5.715" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
-<text x="7" y="-0.5" size="1" layer="27" font="vector">&gt;VALUE</text>
-<text x="7" y="1" size="1" layer="25" font="vector">&gt;NAME</text>
-<rectangle x1="-0.889" y1="3.75" x2="-0.381" y2="4.75" layer="51"/>
-<rectangle x1="-2.159" y1="3.75" x2="-1.651" y2="4.75" layer="51"/>
-<rectangle x1="-3.429" y1="3.75" x2="-2.921" y2="4.75" layer="51"/>
-<rectangle x1="-4.699" y1="3.75" x2="-4.191" y2="4.75" layer="51"/>
-<rectangle x1="0.381" y1="3.75" x2="0.889" y2="4.75" layer="51"/>
-<rectangle x1="1.651" y1="3.75" x2="2.159" y2="4.75" layer="51"/>
-<rectangle x1="2.921" y1="3.75" x2="3.429" y2="4.75" layer="51"/>
-<rectangle x1="4.191" y1="3.75" x2="4.699" y2="4.75" layer="51"/>
-<rectangle x1="-0.889" y1="-4.75" x2="-0.381" y2="-3.75" layer="51"/>
-<rectangle x1="-2.159" y1="-4.75" x2="-1.651" y2="-3.75" layer="51"/>
-<rectangle x1="-3.429" y1="-4.75" x2="-2.921" y2="-3.75" layer="51"/>
-<rectangle x1="-4.699" y1="-4.75" x2="-4.191" y2="-3.75" layer="51"/>
-<rectangle x1="0.381" y1="-4.75" x2="0.889" y2="-3.75" layer="51"/>
-<rectangle x1="1.651" y1="-4.75" x2="2.159" y2="-3.75" layer="51"/>
-<rectangle x1="2.921" y1="-4.75" x2="3.429" y2="-3.75" layer="51"/>
-<rectangle x1="4.191" y1="-4.75" x2="4.699" y2="-3.75" layer="51"/>
-<rectangle x1="5.461" y1="3.75" x2="5.969" y2="4.75" layer="51"/>
-<rectangle x1="-5.969" y1="3.75" x2="-5.461" y2="4.75" layer="51"/>
-<rectangle x1="5.461" y1="-4.75" x2="5.969" y2="-3.75" layer="51"/>
-<rectangle x1="-5.969" y1="-4.75" x2="-5.461" y2="-3.75" layer="51"/>
+<package name="SOT617-3">
+<description>&lt;li&gt;&lt;b&gt;SOT617-3&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;HVQFN32: plastic thermal enhanced very thin quad flat package; no leads; 32 terminals; body 5 x 5 x 0.85 mm
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: MO-220
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;: -- &lt;/ul&gt;</description>
+<wire x1="-2.025" y1="-3.125" x2="2.025" y2="-3.125" width="0.127" layer="51"/>
+<wire x1="2.025" y1="3.125" x2="-2.025" y2="3.125" width="0.127" layer="51"/>
+<wire x1="-3.125" y1="2.025" x2="-3.125" y2="-2.025" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="2.65" x2="-2.025" y2="2.65" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="-2.65" x2="-2.025" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="2.65" y1="2.65" x2="2.65" y2="2.025" width="0.127" layer="51"/>
+<wire x1="2.65" y1="-2.025" x2="2.65" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="2.65" x2="-2.65" y2="2.025" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="-2.025" x2="-2.65" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="-2.025" y1="3.125" x2="-2.025" y2="2.65" width="0.127" layer="51"/>
+<wire x1="2.025" y1="3.125" x2="2.025" y2="2.65" width="0.127" layer="51"/>
+<wire x1="-2.025" y1="-3.125" x2="-2.025" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="2.025" y1="-3.125" x2="2.025" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="-3.125" y1="2.025" x2="-2.65" y2="2.025" width="0.127" layer="51"/>
+<wire x1="2.65" y1="2.025" x2="3.125" y2="2.025" width="0.127" layer="51"/>
+<wire x1="-3.125" y1="-2.025" x2="-2.65" y2="-2.025" width="0.127" layer="51"/>
+<wire x1="2.65" y1="-2.025" x2="3.125" y2="-2.025" width="0.127" layer="51"/>
+<wire x1="2.025" y1="2.65" x2="2.65" y2="2.65" width="0.127" layer="51"/>
+<wire x1="3.125" y1="2.025" x2="3.125" y2="-2.025" width="0.127" layer="51"/>
+<wire x1="2.025" y1="-2.65" x2="2.65" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="2.65" x2="-2.15" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-2.65" y1="-2.65" x2="-2.15" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="-2.65" y1="2.65" x2="-2.65" y2="2.15" width="0.127" layer="21"/>
+<wire x1="-2.65" y1="-2.15" x2="-2.65" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.65" y1="2.65" x2="2.65" y2="2.15" width="0.127" layer="21"/>
+<wire x1="2.65" y1="-2.15" x2="2.65" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.15" y1="2.65" x2="2.65" y2="2.65" width="0.127" layer="21"/>
+<wire x1="2.15" y1="-2.65" x2="2.65" y2="-2.65" width="0.127" layer="21"/>
+<circle x="-3" y="2.5" radius="0.2236" width="0" layer="21"/>
+<smd name="28" x="0.25" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="27" x="0.75" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="26" x="1.25" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="25" x="1.75" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="29" x="-0.25" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="30" x="-0.75" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="31" x="-1.25" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="32" x="-1.75" y="2.55" dx="0.27" dy="0.85" layer="1"/>
+<smd name="12" x="-0.25" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="11" x="-0.75" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="10" x="-1.25" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="9" x="-1.75" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="13" x="0.25" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="14" x="0.75" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="15" x="1.25" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="16" x="1.75" y="-2.55" dx="0.27" dy="0.85" layer="1" rot="R180"/>
+<smd name="20" x="2.55" y="-0.25" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="19" x="2.55" y="-0.75" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="18" x="2.55" y="-1.25" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="17" x="2.55" y="-1.75" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="21" x="2.55" y="0.25" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="22" x="2.55" y="0.75" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="23" x="2.55" y="1.25" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="24" x="2.55" y="1.75" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="4" x="-2.55" y="0.25" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="3" x="-2.55" y="0.75" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="2" x="-2.55" y="1.25" dx="0.27" dy="0.85" layer="1" rot="R270"/>
+<smd name="1" x="-2.55" y="1.75" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="5" x="-2.55" y="-0.25" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="6" x="-2.55" y="-0.75" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="7" x="-2.55" y="-1.25" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="8" x="-2.55" y="-1.75" dx="0.27" dy="0.85" layer="1" rot="R90"/>
+<smd name="33" x="0" y="0" dx="3.75" dy="3.75" layer="1" cream="no"/>
+<text x="4" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
+<text x="4" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="0" y="0" radius="0.3" width="0" layer="31"/>
+<pad name="33@1" x="-0.5625" y="0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@2" x="0.5625" y="0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@3" x="-0.5625" y="-0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@4" x="0.5625" y="-0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
+<circle x="-1.125" y="1.125" radius="0.3" width="0" layer="31"/>
+<circle x="0" y="1.125" radius="0.3" width="0" layer="31"/>
+<circle x="1.125" y="1.125" radius="0.3" width="0" layer="31"/>
+<circle x="1.125" y="0" radius="0.3" width="0" layer="31"/>
+<circle x="1.125" y="-1.125" radius="0.3" width="0" layer="31"/>
+<circle x="0" y="-1.125" radius="0.3" width="0" layer="31"/>
+<circle x="-1.125" y="-1.125" radius="0.3" width="0" layer="31"/>
+<circle x="-1.125" y="0" radius="0.3" width="0" layer="31"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LPC1110FDX20">
+<symbol name="LPC1114FHN33/103">
 <wire x1="-43.18" y1="22.86" x2="43.18" y2="22.86" width="0.254" layer="94"/>
-<wire x1="43.18" y1="22.86" x2="43.18" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="43.18" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-22.86" x2="-43.18" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-43.18" y1="-22.86" x2="-43.18" y2="22.86" width="0.254" layer="94"/>
+<wire x1="43.18" y1="22.86" x2="43.18" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-27.94" x2="-43.18" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-27.94" x2="-43.18" y2="22.86" width="0.254" layer="94"/>
 <text x="-43.18" y="25.4" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-43.18" y="-25.4" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="RESET/PIO0_0" x="45.72" y="-12.7" length="short" rot="R180"/>
+<text x="-5.08" y="25.4" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="PIO2_0/!DTR!/SSEL1" x="45.72" y="-12.7" length="short" rot="R180"/>
+<pin name="!RESET!/PIO0_0" x="-45.72" y="20.32" length="short"/>
 <pin name="PIO0_1/CLKOUT/CT32B0_MAT2" x="-45.72" y="17.78" length="short"/>
-<pin name="XTALIN" x="45.72" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="XTALOUT" x="45.72" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="PIO0_2/SSEL/CT16B0_CAP0" x="-45.72" y="15.24" length="short"/>
+<pin name="XTALIN" x="-45.72" y="-12.7" length="short" direction="in"/>
+<pin name="XTALOUT" x="-45.72" y="-15.24" length="short" direction="out"/>
+<pin name="VDD(IO)" x="-45.72" y="-22.86" length="short" direction="pwr"/>
+<pin name="PIO1_8/CT16B1_CAP0" x="45.72" y="0" length="short" rot="R180"/>
+<pin name="PIO0_2/SSEL0/CT16B0_CAP0" x="-45.72" y="15.24" length="short"/>
+<pin name="PIO0_3" x="-45.72" y="12.7" length="short"/>
 <pin name="PIO0_4/SCL" x="-45.72" y="10.16" length="short"/>
 <pin name="PIO0_5/SDA" x="-45.72" y="7.62" length="short"/>
+<pin name="PIO1_9/CT16B1_MAT0/MOSI1" x="45.72" y="-2.54" length="short" rot="R180"/>
+<pin name="PIO3_4/CT16B0_CAP1/RXD" x="45.72" y="-20.32" length="short" rot="R180"/>
+<pin name="PIO3_5/CT16B1_CAP1/TXD" x="45.72" y="-22.86" length="short" rot="R180"/>
 <pin name="PIO0_6/SCK0" x="-45.72" y="5.08" length="short"/>
-<pin name="PIO0_8/MISO0/CT16B0_MAT0" x="-45.72" y="2.54" length="short"/>
-<pin name="PIO0_9/MOSI0/CT16B0_MAT1" x="-45.72" y="0" length="short"/>
-<pin name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" x="-45.72" y="-2.54" length="short"/>
-<pin name="TDI/PIO0_11/AD0/CT32B0_MAT3" x="-45.72" y="-5.08" length="short"/>
-<pin name="TMS/PIO1_0/AD1/CT32B1_CAP0" x="45.72" y="20.32" length="short" rot="R180"/>
-<pin name="TDO/PIO1_1/AD2/CT32B1_MAT0" x="45.72" y="17.78" length="short" rot="R180"/>
-<pin name="TRST/PIO1_2/AD3/CT32B1_MAT1" x="45.72" y="15.24" length="short" rot="R180"/>
+<pin name="PIO0_7/!CTS!" x="-45.72" y="2.54" length="short"/>
+<pin name="PIO0_8/MISO0/CT16B0_MAT0" x="-45.72" y="0" length="short"/>
+<pin name="PIO0_9/MOSI0/CT16B0_MAT1" x="-45.72" y="-2.54" length="short"/>
+<pin name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" x="-45.72" y="-5.08" length="short"/>
+<pin name="PIO1_10/AD6/CT16B1_MAT1/MISO1" x="45.72" y="-5.08" length="short" rot="R180"/>
+<pin name="R/PIO0_11/AD0/CT32B0_MAT3" x="-45.72" y="-7.62" length="short"/>
+<pin name="R/PIO1_0/AD1/CT32B1_CAP0" x="45.72" y="20.32" length="short" rot="R180"/>
+<pin name="R/PIO1_1/AD2/CT32B1_MAT0" x="45.72" y="17.78" length="short" rot="R180"/>
+<pin name="R/PIO1_2/AD3/CT32B1_MAT1" x="45.72" y="15.24" length="short" rot="R180"/>
 <pin name="SWDIO/PIO1_3/AD4/CT32B1_MAT2" x="45.72" y="12.7" length="short" rot="R180"/>
-<pin name="VDD(3V3)" x="-45.72" y="-10.16" length="short" direction="pwr"/>
+<pin name="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" x="45.72" y="10.16" length="short" rot="R180"/>
+<pin name="PIO1_11/AD7/CT32B1_CAP1" x="45.72" y="-7.62" length="short" rot="R180"/>
+<pin name="PIO3_2/CT16B0_MAT2/SCK1" x="45.72" y="-17.78" length="short" rot="R180"/>
+<pin name="VDD(3V3)" x="-45.72" y="-20.32" length="short" direction="pwr"/>
+<pin name="PIO1_5/!RTS!/CT32B0_CAP0" x="45.72" y="7.62" length="short" rot="R180"/>
 <pin name="PIO1_6/RXD/CT32B0_MAT0" x="45.72" y="5.08" length="short" rot="R180"/>
 <pin name="PIO1_7/TXD/CT32B0_MAT1" x="45.72" y="2.54" length="short" rot="R180"/>
-<pin name="VSS" x="-45.72" y="-15.24" length="short" direction="pwr"/>
+<pin name="VSS" x="-45.72" y="-25.4" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LPC1112FD20" prefix="U">
+<deviceset name="LPC1114FHI33/303" prefix="U">
 <description>&lt;H2&gt;32-bit ARM Cortex-M0 microcontroller; up to 64 kB flash and 8 kB SRAM&lt;/H2&gt;
 The LPC1110/11/12/13/14/15 are a ARM Cortex-M0 based, low-cost 32-bit MCU family, 
 designed for 8/16-bit microcontroller applications, offering performance, low power, simple 
@@ -2245,41 +2285,54 @@ configurable open-drain mode.
 &lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt;&lt;p&gt;
  &lt;img src="http://www.nxp.com/img/NXP_logo.png"&gt;</description>
 <gates>
-<gate name="G$1" symbol="LPC1110FDX20" x="0" y="0"/>
+<gate name="G$1" symbol="LPC1114FHN33/103" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT163-1">
+<device name="" package="SOT617-3">
 <connects>
-<connect gate="G$1" pin="PIO0_1/CLKOUT/CT32B0_MAT2" pad="18"/>
-<connect gate="G$1" pin="PIO0_2/SSEL/CT16B0_CAP0" pad="19"/>
-<connect gate="G$1" pin="PIO0_4/SCL" pad="20"/>
-<connect gate="G$1" pin="PIO0_5/SDA" pad="5"/>
-<connect gate="G$1" pin="PIO0_6/SCK0" pad="6"/>
-<connect gate="G$1" pin="PIO0_8/MISO0/CT16B0_MAT0" pad="1"/>
-<connect gate="G$1" pin="PIO0_9/MOSI0/CT16B0_MAT1" pad="2"/>
-<connect gate="G$1" pin="PIO1_6/RXD/CT32B0_MAT0" pad="11"/>
-<connect gate="G$1" pin="PIO1_7/TXD/CT32B0_MAT1" pad="12"/>
-<connect gate="G$1" pin="RESET/PIO0_0" pad="17"/>
-<connect gate="G$1" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" pad="3"/>
-<connect gate="G$1" pin="SWDIO/PIO1_3/AD4/CT32B1_MAT2" pad="10"/>
-<connect gate="G$1" pin="TDI/PIO0_11/AD0/CT32B0_MAT3" pad="4"/>
-<connect gate="G$1" pin="TDO/PIO1_1/AD2/CT32B1_MAT0" pad="8"/>
-<connect gate="G$1" pin="TMS/PIO1_0/AD1/CT32B1_CAP0" pad="7"/>
-<connect gate="G$1" pin="TRST/PIO1_2/AD3/CT32B1_MAT1" pad="9"/>
-<connect gate="G$1" pin="VDD(3V3)" pad="15"/>
-<connect gate="G$1" pin="VSS" pad="16"/>
-<connect gate="G$1" pin="XTALIN" pad="14"/>
-<connect gate="G$1" pin="XTALOUT" pad="13"/>
+<connect gate="G$1" pin="!RESET!/PIO0_0" pad="2"/>
+<connect gate="G$1" pin="PIO0_1/CLKOUT/CT32B0_MAT2" pad="3"/>
+<connect gate="G$1" pin="PIO0_2/SSEL0/CT16B0_CAP0" pad="8"/>
+<connect gate="G$1" pin="PIO0_3" pad="9"/>
+<connect gate="G$1" pin="PIO0_4/SCL" pad="10"/>
+<connect gate="G$1" pin="PIO0_5/SDA" pad="11"/>
+<connect gate="G$1" pin="PIO0_6/SCK0" pad="15"/>
+<connect gate="G$1" pin="PIO0_7/!CTS!" pad="16"/>
+<connect gate="G$1" pin="PIO0_8/MISO0/CT16B0_MAT0" pad="17"/>
+<connect gate="G$1" pin="PIO0_9/MOSI0/CT16B0_MAT1" pad="18"/>
+<connect gate="G$1" pin="PIO1_10/AD6/CT16B1_MAT1/MISO1" pad="20"/>
+<connect gate="G$1" pin="PIO1_11/AD7/CT32B1_CAP1" pad="27"/>
+<connect gate="G$1" pin="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" pad="26"/>
+<connect gate="G$1" pin="PIO1_5/!RTS!/CT32B0_CAP0" pad="30"/>
+<connect gate="G$1" pin="PIO1_6/RXD/CT32B0_MAT0" pad="31"/>
+<connect gate="G$1" pin="PIO1_7/TXD/CT32B0_MAT1" pad="32"/>
+<connect gate="G$1" pin="PIO1_8/CT16B1_CAP0" pad="7"/>
+<connect gate="G$1" pin="PIO1_9/CT16B1_MAT0/MOSI1" pad="12"/>
+<connect gate="G$1" pin="PIO2_0/!DTR!/SSEL1" pad="1"/>
+<connect gate="G$1" pin="PIO3_2/CT16B0_MAT2/SCK1" pad="28"/>
+<connect gate="G$1" pin="PIO3_4/CT16B0_CAP1/RXD" pad="13"/>
+<connect gate="G$1" pin="PIO3_5/CT16B1_CAP1/TXD" pad="14"/>
+<connect gate="G$1" pin="R/PIO0_11/AD0/CT32B0_MAT3" pad="21"/>
+<connect gate="G$1" pin="R/PIO1_0/AD1/CT32B1_CAP0" pad="22"/>
+<connect gate="G$1" pin="R/PIO1_1/AD2/CT32B1_MAT0" pad="23"/>
+<connect gate="G$1" pin="R/PIO1_2/AD3/CT32B1_MAT1" pad="24"/>
+<connect gate="G$1" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" pad="19"/>
+<connect gate="G$1" pin="SWDIO/PIO1_3/AD4/CT32B1_MAT2" pad="25"/>
+<connect gate="G$1" pin="VDD(3V3)" pad="29"/>
+<connect gate="G$1" pin="VDD(IO)" pad="6"/>
+<connect gate="G$1" pin="VSS" pad="33"/>
+<connect gate="G$1" pin="XTALIN" pad="4"/>
+<connect gate="G$1" pin="XTALOUT" pad="5"/>
 </connects>
 <technologies>
-<technology name="/102">
-<attribute name="ADC" value="5"/>
-<attribute name="FLASH" value="16kB"/>
-<attribute name="GPIO" value="16"/>
+<technology name="">
+<attribute name="ADC" value="8"/>
+<attribute name="FLASH" value="32kB"/>
+<attribute name="GPIO" value="28"/>
 <attribute name="PWR_PROFILES" value="yes"/>
-<attribute name="SERIES" value="LPC1100L"/>
-<attribute name="SPI" value="1"/>
-<attribute name="SRAM" value="4kB"/>
+<attribute name="SERIES" value="LPC1100XL"/>
+<attribute name="SPI" value="2"/>
+<attribute name="SRAM" value="8kB"/>
 </technology>
 </technologies>
 </device>
@@ -2540,7 +2593,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="MCU" library="NXP_60_26022015" deviceset="LPC1112FD20" device="" technology="/102"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="6.8nF"/>
@@ -2550,6 +2602,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U2" library="NXP_60_26022015" deviceset="LPC1114FHI33/303" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2623,13 +2676,13 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <instance part="SUPPLY8" gate="G$1" x="83.82" y="44.45" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="85.979" y="45.339" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C8" gate="G$1" x="-38.1" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-45.339" y="91.694" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="-42.799" y="90.424" size="1.778" layer="96" rot="MR90"/>
+<instance part="C8" gate="G$1" x="-119.38" y="-7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-126.619" y="-7.366" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="-124.079" y="-8.636" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="GND28" gate="1" x="-38.1" y="81.28" rot="MR0"/>
-<instance part="SUPPLY9" gate="G$1" x="-38.1" y="99.06" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-39.624" y="100.076" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND28" gate="1" x="-119.38" y="-17.78" rot="MR0"/>
+<instance part="SUPPLY9" gate="G$1" x="-119.38" y="0" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-120.904" y="1.016" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="-81.28" y="121.92" rot="MR0"/>
 <instance part="C3" gate="G$1" x="-81.28" y="109.22" smashed="yes" rot="R180">
@@ -2648,7 +2701,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <instance part="GND1" gate="1" x="154.94" y="68.58"/>
 <instance part="SUPPLY1" gate="G$1" x="154.94" y="81.28"/>
 <instance part="SUPPLY18" gate="G$1" x="-139.7" y="106.68" rot="MR270"/>
-<instance part="MCU" gate="G$1" x="20.32" y="106.68"/>
 <instance part="GND7" gate="1" x="-46.355" y="163.195" smashed="yes">
 <attribute name="VALUE" x="-48.895" y="161.29" size="1.27" layer="96"/>
 </instance>
@@ -2668,15 +2720,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="VALUE" x="-39.37" y="173.6725" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="43.18" y="48.006"/>
-<instance part="C7" gate="G$1" x="-50.8" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-58.039" y="91.694" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="-55.499" y="90.424" size="1.778" layer="96" rot="MR90"/>
+<instance part="C7" gate="G$1" x="-132.08" y="-7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-139.319" y="-7.366" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="-136.779" y="-8.636" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="C9" gate="G$1" x="-68.58" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="-59.944" y="108.839" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-59.944" y="111.379" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND12" gate="1" x="-68.58" y="96.52"/>
+<instance part="U2" gate="G$1" x="-60.96" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -2723,14 +2776,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="W25Q128FV" gate="G$1" pin="WP"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="VDD(3V3)"/>
-<wire x1="-25.4" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="96.52" x2="-38.1" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-2.54" x2="-119.38" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="-2.54" x2="-119.38" y2="0" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<junction x="-38.1" y="96.52"/>
+<junction x="-119.38" y="-2.54"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="-50.8" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-2.54" x2="-119.38" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VDD(3V3)"/>
 </segment>
 <segment>
 <wire x1="-48.895" y1="180.34" x2="-48.895" y2="165.1" width="0.1524" layer="91"/>
@@ -2888,16 +2941,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="VSS"/>
-<wire x1="-25.4" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="91.44" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-7.62" x2="-114.3" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-7.62" x2="-114.3" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="-33.02" y1="88.9" x2="-38.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-10.16" x2="-119.38" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="-38.1" y1="88.9" x2="-38.1" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-38.1" y="88.9"/>
+<wire x1="-119.38" y1="-10.16" x2="-119.38" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-119.38" y="-10.16"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="88.9" x2="-38.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-10.16" x2="-119.38" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <wire x1="-46.355" y1="180.34" x2="-46.355" y2="165.735" width="0.1524" layer="91"/>
@@ -2981,9 +3034,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_5/SDA"/>
-<wire x1="-25.4" y1="114.3" x2="-38.1" y2="114.3" width="0.1524" layer="91"/>
-<label x="-38.1" y="114.3" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="25.4" x2="-119.38" y2="25.4" width="0.1524" layer="91"/>
+<label x="-116.84" y="25.4" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PIO0_5/SDA"/>
 </segment>
 <segment>
 <pinref part="BNO055" gate="G$1" pin="COM0"/>
@@ -2994,9 +3047,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_4/SCL"/>
-<wire x1="-25.4" y1="116.84" x2="-38.1" y2="116.84" width="0.1524" layer="91"/>
-<label x="-38.1" y="116.84" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="27.94" x2="-119.38" y2="27.94" width="0.1524" layer="91"/>
+<label x="-116.84" y="27.94" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PIO0_4/SCL"/>
 </segment>
 <segment>
 <pinref part="BNO055" gate="G$1" pin="COM1"/>
@@ -3017,9 +3070,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="U$1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO1_6/RXD/CT32B0_MAT0"/>
-<wire x1="66.04" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<label x="71.12" y="111.76" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-12.7" y="-2.54" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PIO3_4/CT16B0_CAP1/RXD"/>
 </segment>
 </net>
 <net name="LPC_TX" class="0">
@@ -3034,9 +3087,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pinref part="U$1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO1_7/TXD/CT32B0_MAT1"/>
-<wire x1="66.04" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<label x="71.12" y="109.22" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-12.7" y="-5.08" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PIO3_5/CT16B1_CAP1/TXD"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3048,7 +3101,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="ISP" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_1/CLKOUT/CT32B0_MAT2"/>
 <wire x1="-25.4" y1="124.46" x2="-38.1" y2="124.46" width="0.1524" layer="91"/>
 <label x="-38.1" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -3060,9 +3112,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="RESET/PIO0_0"/>
-<wire x1="66.04" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
-<label x="73.66" y="93.98" size="1.778" layer="95"/>
+<wire x1="-121.92" y1="38.1" x2="-106.68" y2="38.1" width="0.1524" layer="91"/>
+<label x="-119.38" y="38.1" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="!RESET!/PIO0_0"/>
 </segment>
 <segment>
 <wire x1="-43.815" y1="180.34" x2="-43.815" y2="166.37" width="0.1524" layer="91"/>
@@ -3077,7 +3129,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <label x="-132.08" y="119.38" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_2/SSEL/CT16B0_CAP0"/>
 <wire x1="-25.4" y1="121.92" x2="-38.1" y2="121.92" width="0.1524" layer="91"/>
 <label x="-38.1" y="121.92" size="1.778" layer="95"/>
 </segment>
@@ -3089,7 +3140,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <label x="-132.08" y="114.3" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_8/MISO0/CT16B0_MAT0"/>
 <wire x1="-25.4" y1="109.22" x2="-38.1" y2="109.22" width="0.1524" layer="91"/>
 <label x="-38.1" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -3101,9 +3151,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <label x="-86.36" y="109.22" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_6/SCK0"/>
-<wire x1="-25.4" y1="111.76" x2="-38.1" y2="111.76" width="0.1524" layer="91"/>
-<label x="-38.1" y="111.76" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="22.86" x2="-119.38" y2="22.86" width="0.1524" layer="91"/>
+<label x="-116.84" y="22.86" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="PIO0_6/SCK0"/>
 </segment>
 </net>
 <net name="WS_DI" class="0">
@@ -3113,7 +3163,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <label x="-86.36" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PIO0_9/MOSI0/CT16B0_MAT1"/>
 <wire x1="-25.4" y1="106.68" x2="-38.1" y2="106.68" width="0.1524" layer="91"/>
 <label x="-38.1" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -3132,9 +3181,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <label x="-92.075" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2"/>
-<wire x1="-25.4" y1="104.14" x2="-38.1" y2="104.14" width="0.1524" layer="91"/>
-<label x="-38.1" y="104.14" size="1.778" layer="95"/>
+<wire x1="-114.3" y1="12.7" x2="-127" y2="12.7" width="0.1524" layer="91"/>
+<label x="-127" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
