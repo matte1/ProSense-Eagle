@@ -1253,10 +1253,10 @@ Please send your comments to the mail address above.</description>
 <text x="4" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
 <text x="4" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
 <circle x="0" y="0" radius="0.3" width="0" layer="31"/>
-<pad name="33@1" x="-0.5625" y="0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
-<pad name="33@2" x="0.5625" y="0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
-<pad name="33@3" x="-0.5625" y="-0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
-<pad name="33@4" x="0.5625" y="-0.5625" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@1" x="-0.5625" y="0.5625" drill="0.3302" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@2" x="0.5625" y="0.5625" drill="0.3302" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@3" x="-0.5625" y="-0.5625" drill="0.3302" diameter="0.6" stop="no" thermals="no"/>
+<pad name="33@4" x="0.5625" y="-0.5625" drill="0.3302" diameter="0.6" stop="no" thermals="no"/>
 <circle x="-1.125" y="1.125" radius="0.3" width="0" layer="31"/>
 <circle x="0" y="1.125" radius="0.3" width="0" layer="31"/>
 <circle x="1.125" y="1.125" radius="0.3" width="0" layer="31"/>
@@ -1597,25 +1597,19 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </package>
 <package name="WSON-8-PAD">
 <rectangle x1="-0.65" y1="-0.35" x2="0.65" y2="0.35" layer="31"/>
-<smd name="2" x="-3.81" y="0.635" dx="0.55" dy="0.48" layer="1"/>
+<smd name="2" x="-3.81" y="0.635" dx="0.6" dy="0.53" layer="1"/>
 <wire x1="-4" y1="-3" x2="4" y2="-3" width="0.127" layer="21"/>
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
 <wire x1="-4" y1="-3" x2="-4" y2="3" width="0.127" layer="21"/>
 <wire x1="4" y1="-3" x2="4" y2="3" width="0.127" layer="21"/>
-<smd name="1" x="-3.81" y="1.905" dx="0.55" dy="0.48" layer="1"/>
-<smd name="3" x="-3.81" y="-0.635" dx="0.55" dy="0.48" layer="1" rot="R180"/>
-<smd name="4" x="-3.81" y="-1.905" dx="0.55" dy="0.48" layer="1"/>
-<smd name="8" x="3.81" y="1.905" dx="0.55" dy="0.48" layer="1"/>
-<smd name="7" x="3.81" y="0.635" dx="0.55" dy="0.48" layer="1"/>
-<smd name="6" x="3.81" y="-0.635" dx="0.55" dy="0.48" layer="1"/>
-<smd name="5" x="3.81" y="-1.905" dx="0.55" dy="0.48" layer="1"/>
+<smd name="1" x="-3.81" y="1.905" dx="0.6" dy="0.53" layer="1"/>
+<smd name="3" x="-3.81" y="-0.635" dx="0.6" dy="0.53" layer="1" rot="R180"/>
+<smd name="4" x="-3.81" y="-1.905" dx="0.6" dy="0.53" layer="1"/>
+<smd name="8" x="3.81" y="1.905" dx="0.6" dy="0.53" layer="1"/>
+<smd name="7" x="3.81" y="0.635" dx="0.6" dy="0.53" layer="1"/>
+<smd name="6" x="3.81" y="-0.635" dx="0.6" dy="0.53" layer="1"/>
+<smd name="5" x="3.81" y="-1.905" dx="0.6" dy="0.53" layer="1"/>
 <circle x="-2.54" y="1.905" radius="0.3" width="0.1" layer="21"/>
-<polygon width="0.127" layer="1">
-<vertex x="-1.7" y="-2.15"/>
-<vertex x="1.7" y="-2.15"/>
-<vertex x="1.7" y="2.15"/>
-<vertex x="-1.7" y="2.15"/>
-</polygon>
 <text x="-1.27" y="3.81" size="0.6096" layer="25">&gt;Name</text>
 <text x="-1.27" y="-4.445" size="0.6096" layer="27">&gt;Value</text>
 </package>
