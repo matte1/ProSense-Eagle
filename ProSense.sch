@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1613,6 +1613,11 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <text x="-1.27" y="3.81" size="0.6096" layer="25">&gt;Name</text>
 <text x="-1.27" y="-4.445" size="0.6096" layer="27">&gt;Value</text>
 </package>
+<package name="COPPER-PAD">
+<smd name="GND" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100"/>
+<smd name="VLED" x="1.905" y="0" dx="1.27" dy="1.27" layer="1" roundness="100"/>
+<smd name="SIG" x="3.81" y="0" dx="1.27" dy="1.27" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="W25Q128FV">
@@ -1630,6 +1635,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="7.62" y1="20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
 <text x="-10.16" y="22.86" size="1.27" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CON">
+<rectangle x1="-2.54" y1="5.08" x2="2.54" y2="10.16" layer="94"/>
+<rectangle x1="5.08" y1="5.08" x2="10.16" y2="10.16" layer="94"/>
+<rectangle x1="12.7" y1="5.08" x2="17.78" y2="10.16" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="pad" length="middle" rot="R90"/>
+<pin name="VLED" x="7.62" y="2.54" visible="pad" length="middle" rot="R90"/>
+<pin name="SIG" x="15.24" y="2.54" visible="pad" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1674,6 +1687,23 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <connect gate="G$1" pin="RESET" pad="7"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 <connect gate="G$1" pin="WP" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON">
+<gates>
+<gate name="G$1" symbol="CON" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="COPPER-PAD">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIG" pad="SIG"/>
+<connect gate="G$1" pin="VLED" pad="VLED"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2844,7 +2874,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="MCU" library="NXP_60_26022015" deviceset="LPC1114FHI33/302" device=""/>
 <part name="W25QWSON" library="Matts-Parts" deviceset="W25Q128FV" device="WSON"/>
 <part name="U$2" library="Ava" deviceset="UBLOX_MAX" device=""/>
-<part name="U$3" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
+<part name="ANT" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD3"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2856,12 +2886,17 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-3"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="LPCLED" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="330"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$4" library="Matts-Parts" deviceset="CON" device=""/>
+<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2953,22 +2988,25 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="MCU" gate="G$1" x="31.115" y="51.816"/>
 <instance part="W25QWSON" gate="G$1" x="-125.73" y="51.816"/>
 <instance part="U$2" gate="G$1" x="55.118" y="120.142"/>
-<instance part="U$3" gate="G$1" x="13.462" y="130.302" smashed="yes" rot="R90">
+<instance part="ANT" gate="G$1" x="13.462" y="130.302" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.302" y="126.492" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="5.842" y="121.412" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND15" gate="1" x="15.748" y="125.222" rot="R270"/>
 <instance part="GND17" gate="1" x="15.748" y="135.382" rot="R270"/>
 <instance part="GND19" gate="1" x="93.218" y="94.742" rot="R90"/>
-<instance part="SUPPLY5" gate="G$1" x="98.298" y="127.762" rot="R270"/>
+<instance part="SUPPLY5" gate="G$1" x="98.298" y="131.318"/>
 <instance part="R1" gate="G$1" x="-116.332" y="-0.762" rot="R90"/>
 <instance part="R2" gate="G$1" x="-116.332" y="-20.828" rot="R90"/>
 <instance part="GND21" gate="1" x="-116.332" y="-34.29"/>
 <instance part="SUPPLY1" gate="G$1" x="-91.059" y="-15.24" rot="R180"/>
 <instance part="SUPPLY3" gate="G$1" x="113.03" y="74.041"/>
 <instance part="SUPPLY13" gate="G$1" x="-116.332" y="7.366"/>
-<instance part="S2" gate="G$1" x="-65.024" y="-54.102"/>
-<instance part="D1" gate="G$1" x="-95.377" y="-66.04" rot="R270"/>
+<instance part="S2" gate="G$1" x="-65.024" y="-54.102" smashed="yes">
+<attribute name="NAME" x="-67.564" y="-51.562" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-98.044" y="-49.022" size="1.778" layer="96"/>
+</instance>
+<instance part="LPCLED" gate="G$1" x="-95.377" y="-66.04" rot="R270"/>
 <instance part="R3" gate="G$1" x="-108.458" y="-71.12" rot="R90"/>
 <instance part="GND1" gate="1" x="-108.458" y="-84.836"/>
 <instance part="SUPPLY10" gate="G$1" x="-51.054" y="-35.814" smashed="yes" rot="MR0">
@@ -2978,6 +3016,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="VALUE" x="-76.962" y="-62.865" size="1.27" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="-51.054" y="-47.498" rot="R90"/>
+<instance part="C4" gate="G$1" x="98.298" y="121.158" rot="R180"/>
+<instance part="GND12" gate="1" x="98.298" y="106.68"/>
+<instance part="U$4" gate="G$1" x="-86.36" y="119.38" rot="R90"/>
+<instance part="GND22" gate="1" x="-83.82" y="114.3"/>
+<instance part="SUPPLY14" gate="G$1" x="-76.2" y="127" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3067,28 +3110,28 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="29.21" y="-5.334"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="9_V_RESET"/>
-<wire x1="77.978" y1="135.382" x2="88.138" y2="135.382" width="0.1524" layer="91"/>
-<wire x1="88.138" y1="135.382" x2="88.138" y2="130.302" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="6_V_BCKP"/>
-<wire x1="88.138" y1="130.302" x2="88.138" y2="127.762" width="0.1524" layer="91"/>
-<wire x1="88.138" y1="127.762" x2="88.138" y2="125.222" width="0.1524" layer="91"/>
-<wire x1="88.138" y1="125.222" x2="88.138" y2="120.142" width="0.1524" layer="91"/>
-<wire x1="88.138" y1="120.142" x2="77.978" y2="120.142" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="7_VCC_IO"/>
-<wire x1="77.978" y1="125.222" x2="88.138" y2="125.222" width="0.1524" layer="91"/>
-<junction x="88.138" y="125.222"/>
-<pinref part="U$2" gate="G$1" pin="8_VCC"/>
-<wire x1="77.978" y1="130.302" x2="88.138" y2="130.302" width="0.1524" layer="91"/>
-<junction x="88.138" y="130.302"/>
-<wire x1="88.138" y1="127.762" x2="98.298" y2="127.762" width="0.1524" layer="91"/>
-<junction x="88.138" y="127.762"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
 <wire x1="-51.054" y1="-42.418" x2="-51.054" y2="-35.814" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="98.298" y1="131.318" x2="98.298" y2="127.889" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="9_V_RESET"/>
+<pinref part="U$2" gate="G$1" pin="8_VCC"/>
+<wire x1="98.298" y1="127.889" x2="98.298" y2="123.698" width="0.1524" layer="91"/>
+<wire x1="77.978" y1="135.382" x2="77.978" y2="130.302" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="7_VCC_IO"/>
+<wire x1="77.978" y1="130.302" x2="77.978" y2="127.889" width="0.1524" layer="91"/>
+<junction x="77.978" y="130.302"/>
+<pinref part="U$2" gate="G$1" pin="6_V_BCKP"/>
+<wire x1="77.978" y1="127.889" x2="77.978" y2="125.222" width="0.1524" layer="91"/>
+<wire x1="77.978" y1="125.222" x2="77.978" y2="120.142" width="0.1524" layer="91"/>
+<junction x="77.978" y="125.222"/>
+<wire x1="77.978" y1="127.889" x2="98.298" y2="127.889" width="0.1524" layer="91"/>
+<junction x="77.978" y="127.889"/>
+<junction x="98.298" y="127.889"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3225,6 +3268,17 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-70.104" y1="-54.102" x2="-76.454" y2="-54.102" width="0.1524" layer="91"/>
 <wire x1="-76.454" y1="-54.102" x2="-76.454" y2="-57.15" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="98.298" y1="116.078" x2="98.298" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="-88.9" y1="119.38" x2="-83.82" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="119.38" x2="-83.82" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3369,7 +3423,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="11_RF_IN"/>
-<pinref part="U$3" gate="G$1" pin="SIGNAL"/>
+<pinref part="ANT" gate="G$1" pin="SIGNAL"/>
 <wire x1="18.542" y1="130.302" x2="32.258" y2="130.302" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3414,10 +3468,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-116.332" y1="4.318" x2="-116.332" y2="7.366" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="VIN"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VLED"/>
+<wire x1="-88.9" y1="127" x2="-76.2" y2="127" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="VIN"/>
+</segment>
 </net>
 <net name="LED" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="LPCLED" gate="G$1" pin="A"/>
 <wire x1="-92.837" y1="-66.04" x2="-84.074" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-88.646" y="-65.659" size="1.778" layer="95"/>
 </segment>
@@ -3429,7 +3488,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="LPCLED" gate="G$1" pin="C"/>
 <wire x1="-100.457" y1="-66.04" x2="-108.458" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
@@ -3440,11 +3499,25 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-59.944" y1="-54.102" x2="-51.054" y2="-54.102" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-51.054" y1="-54.102" x2="-51.054" y2="-52.578" width="0.1524" layer="91"/>
+<label x="-58.42" y="-53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="PIO1_10/AD6/CT16B1_MAT1"/>
 <wire x1="76.835" y1="49.276" x2="90.17" y2="49.276" width="0.1524" layer="91"/>
 <label x="85.344" y="49.403" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SIG" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="PIO2_0/!DTR!"/>
+<wire x1="76.835" y1="41.656" x2="87.884" y2="41.656" width="0.1524" layer="91"/>
+<wire x1="87.884" y1="41.656" x2="87.884" y2="41.783" width="0.1524" layer="91"/>
+<label x="80.899" y="41.656" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="SIG"/>
+<wire x1="-88.9" y1="134.62" x2="-76.2" y2="134.62" width="0.1524" layer="91"/>
+<label x="-81.026" y="134.747" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
